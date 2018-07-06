@@ -1,0 +1,294 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* Wrapper */
+#wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+/* End Wrapper */
+
+/* Header */
+header{
+    background: #151515;
+    width: 100%;
+}
+header:after{
+    content: "";
+    clear: both;
+    display: block;
+    
+}
+#logo{
+    float:left;
+    background: url('images/logo.png');
+    width: 270px;
+    height: 70px;
+    text-indent: -10000px;
+}
+
+nav{
+    float: right;
+    margin-top: 28px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    color: #51b105;
+}
+nav li{
+    float: left;
+    margin-left: 20px;
+}
+nav span{
+    color: green;
+    margin-left: 20px;
+}
+
+/* Header */
+
+/* Banner */
+#banner{
+    max-height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+}
+#banner #banner-overlay{
+    position: absolute;
+    top: 110px;
+    width: 100%;
+}
+#banner #banner-tittle{
+    color: #fff;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+#banner p{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 100%;
+    max-width: 508px;
+}
+
+#banner a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: green;
+    display: block;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin-top: 66px;
+    border-radius: 7px;
+}
+
+#banner a:hover{
+    background-color: #3a8f0a;
+}
+/* End Banner */
+
+/* Content */
+#content{
+    margin-top: 80px;
+}
+#content section{
+    float: left;
+    width: 33%;
+    padding: 1px;
+    text-align: center;
+    color: #8c8b8b;
+    padding-bottom: 163px;
+}
+
+#content section h3{
+    font-size: 30px;
+    margin: 35px 0;
+}
+
+#content section p{
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* End Content */
+
+/* our-client */
+#our-client{
+    clear: both;
+    border-top: 1px solid #ccc;
+}
+#our-client h2{
+    color: #fff;
+    background-color: #52b106;
+    text-transform: uppercase;
+    width: 250px;
+    text-align: center;
+    padding: 17px;
+    position: relative;
+    top: -27px;
+    margin: 0 auto;
+    border-left: 25px solid #fff;
+    border-right: 25px solid #fff;
+}
+
+#our-client img{
+    float: left;
+    width: 30%;
+    margin-bottom: 95px;
+}
+#our-client blockquote{
+    float: right;
+    width: 65%;
+    margin-top: 24px;
+    text-align: center;
+    font-style: italic;
+    color: #8c8b8b;
+    line-height: 1.7;
+    padding-top: 50px;
+    background: url('images/quotes.png') no-repeat;
+}
+
+/* End our-client */
+
+
+/* Drop Us */
+#drop-us{
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    clear: both;
+}
+
+#drop-us h2{
+    color: #fff;
+    background-color: #52b106;
+    text-transform: uppercase;
+    width: 250px;
+    text-align: center;
+    padding: 17px;
+    position: relative;
+    top: -27px;
+    margin: 0 auto;
+    border-left: 25px solid #fff;
+    border-right: 25px solid #fff;
+}
+
+#drop-us #about{
+    float: left;
+    width: 60%;
+    color: #8c8b8b;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+#drop-us #map{
+    float: right;
+}
+#drop-us #social{
+    position: relative;
+    clear: both;
+    top: -40px;
+}
+/* End Drop Us */
