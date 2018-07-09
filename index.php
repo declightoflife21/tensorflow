@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
 
+<html>
+<meta charset="utf-8"/>
 <head>
     <title>PoseNet - Camera Feed Demo</title>
     <!-- style css -->
@@ -63,23 +64,10 @@
     <!-- button capture -->
     <button onclick="playVid()" type="button">Capture</button> Every
     <!-- end button capture -->
-    <!-- script play/stop video -->
-    <script> 
-      var vid = document.getElementById("video"); 
-
-      function playVid() { 
-      vid.play(); 
-      } 
-
-      function pauseVid() { 
-      vid.pause(); 
-    } 
-    </script>
-    <!-- end script play/stop video -->
-    <input id="input" type="text" name="label" placeholder="time" style=" margin-top: 5px width:20%"> Second <br>
+    <input id="input" type="text" name="label" placeholder="time" style=" margin-top: 5px"> Second <br>
     <input type="text" name="label" placeholder="Label" style=" margin-top: 5px"><br>
     <!-- button stop video -->
-    <button onclick="pauseVid()" type="button">Stop</button><br>
+    <button onclick="pauseVid()" type="button" style="margin-top: 5px">Stop</button><br>
     <!-- end button stop video -->
 </div>
     <!-- show table database -->
@@ -155,7 +143,35 @@
     <script src="demo_util.js"></script>
     <script src="stats.min.js "></script>
     <script src="camera.js"></script>
-    <script type="text/javascript" src="script/tampil.js"></script>
 </body>
 
+<script>
+    var imageScaleFactor = 0.5;
+    var outputStride = 16;
+    var flipHorizontal = false;
+
+    var imageElement = document.getElementById('video');
+
+    posenet.load().then(function(net){
+      return net.estimateSinglePose(imageElement, imageScaleFactor, flipHorizontal, outputStride)
+    }).then(function(pose){
+      console.log(pose);
+    })
+
+
+  </script>
+
+<!-- script play/stop video -->
+    <script> 
+      var vid = document.getElementById("video"); 
+
+      function playVid() { 
+      vid.play(); 
+      } 
+
+      function pauseVid() { 
+      vid.pause(); 
+    } 
+    </script>
+    <!-- end script play/stop video -->
 </html>
