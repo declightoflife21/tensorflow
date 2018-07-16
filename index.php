@@ -62,7 +62,7 @@
     <!-- end video -->
 
     <!-- button capture -->
-    <button onclick="playVid()" type="button">Capture</button> Every
+    <button onclick="playVid()" id="btn" type="button">Capture</button> Every
     <!-- end button capture -->
     <input id="input" type="text" name="label" placeholder="time" style=" margin-top: 5px"> Second <br>
     <input type="text" name="label" placeholder="Label" style=" margin-top: 5px"><br>
@@ -136,6 +136,8 @@
     </table>
     <!-- end table -->
 
+    <!-- <div id="hasil"></div> -->
+
     <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.2/build/dat.gui.js"></script>
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
@@ -143,23 +145,10 @@
     <script src="demo_util.js"></script>
     <script src="stats.min.js "></script>
     <script src="camera.js"></script>
+    <!-- <script src="hasil.js"></script> -->
 </body>
 
-<script>
-    var imageScaleFactor = 0.5;
-    var outputStride = 16;
-    var flipHorizontal = false;
-
-    var imageElement = document.getElementById('video');
-
-    posenet.load().then(function(net){
-      return net.estimateSinglePose(imageElement, imageScaleFactor, flipHorizontal, outputStride)
-    }).then(function(pose){
-      console.log(pose);
-    })
-
-
-  </script>
+<script src="output.js"></script>
 
 <!-- script play/stop video -->
     <script> 
