@@ -8,7 +8,9 @@
       		return net.estimateSinglePose(imageElement, imageScaleFactor, flipHorizontal, outputStride)
     		}).then(function(pose){
       			// console.log(pose);
-
     			// json = JSON.parse(pose);
-			document.write(JSON.stringify(pose));
+          var myJSON = JSON.stringify(pose);
+          document.getElementById("score").innerHTML = myJSON;
+		  // var element = document.write(JSON.stringify(pose));
+    //   element.innerHTML();
     		})

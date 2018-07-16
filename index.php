@@ -136,7 +136,7 @@
     </table>
     <!-- end table -->
 
-    <!-- <div id="hasil"></div> -->
+   <p id="score"></p>
 
     <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.2/build/dat.gui.js"></script>
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
