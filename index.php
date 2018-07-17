@@ -136,8 +136,7 @@
     </table>
     <!-- end table -->
 
-   <p id="score"></p>
-
+   <p id="data"></p>
     <script src="https://cdn.jsdelivr.net/npm/dat.gui@0.7.2/build/dat.gui.js"></script>
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/posenet"></script>
