@@ -187,6 +187,4 @@ function showOutput (heatMapValues, offsets, outputStride, scale = 1, ctx)
     const offsetPointX = offsetPointsData[i + 1];
 
     document.getElementById('tmpt_hasil').innerHTML=heatmapY,heatmapX,offsetPointY,offsetPointX;
-  }*/
-
-  
+  }*/  

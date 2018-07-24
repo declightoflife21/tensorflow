@@ -7,10 +7,8 @@
     	posenet.load().then(function(net){
       		return net.estimateSinglePose(imageElement, imageScaleFactor, flipHorizontal, outputStride)
     		}).then(function(pose){
-      			// console.log(pose);
-    			// json = JSON.parse(pose);
-          var myJSON = JSON.stringify(pose,['keypoints','score','part']);
+
+          var myJSON = JSON.stringify(pose,['keypoints','score']);
           document.getElementById("data").innerHTML = myJSON;
-		  // var element = document.write(JSON.stringify(pose));
-    //   element.innerHTML();
-    		})
+          
+        })
